@@ -2,9 +2,9 @@ import java.io.File
 import java.lang.Integer.parseInt
 import java.util.stream.Collectors
 
-fun main(args: Array<String>) {
+fun main() {
     val fileName = "C:\\Users\\marjon4\\IdeaProjects\\AdventOfCode\\resources\\DayOne.txt"
-    
+
     val integers = File(fileName).readLines().stream()
         .map { line -> parseInt(line) }
         .collect(Collectors.toList())
